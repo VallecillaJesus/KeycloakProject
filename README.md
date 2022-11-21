@@ -6,7 +6,9 @@ El orden de ejecicion de los microservicios es:
 
 1. Levantar el server de `Keycloak` e importar el archivo `realm-export.json` que contiene las configuraciones del reino
 
-`docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:20.0.1 start-dev`
+```sh
+docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:20.0.1 start-dev
+```
 
 2. Levantar el microservicio `eureka-service`
 
